@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {%block title %} Jail Management System {%endblock%}
+{%block navImg%} <img class="nav-img" src="/static/img/navlogo.png" alt="Prison Logo"> {%endblock%}
+{%block navTitle%} Jail Management {%endblock%}
+{%block css%} {{url_for('static', filename='style.css')}} {%endblock%} {%block
+adminDash%} {{url_for('static', filename='adminDash.css')}} {%endblock%} 
+{%block nav%}
+<li><a class="nav-a" href="{{url_for('admin')}}">Logout</a></li>
+{%endblock%}
+{%block
+content%}
+<section class="section-show">
+  <div class="option">
+    <a href="{{url_for('staffDetails')}}">Staff Details</a>
+
+  </div>
+  <div class="staff-count">
+    <div class="count-main">
+      <h1 class="count-title">Total Person</h1>
+      <h1>Police: <span class="count-span">{{ user[2][1] }}</span></h1>
+      <h1>Cleaner: <span class="count-span">{{ user[1][1] }}</span></h1>
+      <h1>Chef: <span class="count-span">{{ user[0][1] }}</span></h1>
+
+    </div>
+  </div>
+</section>
+{%endblock%}
+
+<!--End-->

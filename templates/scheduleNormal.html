@@ -1,0 +1,40 @@
+<section class="section-schedule">
+  <div class="schedule-main">
+    <h1 class="schedule-title">Work Schedule</h1>
+
+    {% for user in user %}
+    {% if user[1]  == email %}
+    <p class="staff-details row-{{ loop.index }}">
+      <span class="schedule-span">Name:</span> {{ user[0] }}
+    </p>
+    <p class="staff-details row-{{ loop.index }}">
+      <span class="schedule-span">Role:</span> {{ user[5] }}
+    </p>
+    <p class="staff-details row-{{ loop.index }}">
+      <span class="schedule-span">Email:</span> {{ user[1] }}
+    </p>
+
+    <button class="staff-btn">
+      Request Schedule Change
+    </button>
+
+    {% else %}
+    <p class="staff-details row-{{ loop.index }}">
+      <span class="schedule-span">Name:</span> {{ user[1] }}
+    </p>
+    <p class="staff-details row-{{ loop.index }}">
+      <span class="schedule-span">Role:</span> {{ user[2] }}
+    </p>
+    <p class="staff-details row-{{ loop.index }}">
+      <span class="schedule-span">Email:</span> {{ user[3] }}
+    </p>
+
+
+    {% endif %}
+
+    {% endfor %}
+  </div>
+</section>
+
+
+<!--End-->

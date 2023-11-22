@@ -1,0 +1,43 @@
+
+  <form class="account-main" method="post" action="/staffDetails">
+    <h1 class="account-failed">{{failed}}</h1>
+    <h1>Name</h1>
+    <input
+      class="account-input name"
+      required
+      placeholder="NAME"
+      name="name"
+      type="text"
+    />
+    <h1>Role</h1>
+    <select class="account-input op" name="occupation" id="occupation">
+      <option value="Cleaner">Cleaner</option>
+      <option value="Police">Police</option>
+      <option value="Chef">Chef</option>
+
+    </select>
+    <h1>Email</h1>
+    <input
+      class="account-input email"
+      required
+      placeholder="EMAIL"
+      name="email"
+      type="text"
+    />
+    <h1>Password</h1>
+    <input
+      class="account-input"
+      required
+      placeholder="PASSWORD"
+      name="password"
+      type="text"
+    />
+    <div class="three-input">
+      <input class="account-btn" name="btn" value="Add" type="submit" />
+
+    </div>
+  </form>
+
+</div>
+
+<!--End-->

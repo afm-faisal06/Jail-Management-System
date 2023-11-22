@@ -1,0 +1,22 @@
+<form class="search-form" action="" method="POST">
+  <input class="search-input" type="text" name="email" placeholder="Search By Email..." />
+  <input name="btn" class="search-btn" type="submit" value="🍳" />
+</form>
+
+<div class="staff-main">
+  <h1 class="staff-title">Id</h1>
+  <h1 class="staff-title">Name</h1>
+  <h1 class="staff-title">Role</h1>
+  <h1 class="staff-title">Email</h1>
+
+  {% for user in user %}
+    <p class="staff-details row-{{ loop.index }}">{{ user[0] }}</p>
+    <p class="staff-details row-{{ loop.index }}">{{ user[1] }}</p>
+    <p class="staff-details row-{{ loop.index }}">{{ user[2] }}</p>
+    <p class="staff-details row-{{ loop.index }}">{{ user[3] }}</p>
+
+
+  {% endfor %}
+</div>
+
+<!--End-->
