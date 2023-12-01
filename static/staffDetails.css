@@ -48,7 +48,17 @@
 
 .staff-main{
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(5,1fr);
+}
+
+.deputy-main{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+
+.deputy-nothing{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
 }
 
 
@@ -153,5 +163,22 @@
   align-items: center;
 }
 
+.two-btn{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  margin: 0 auto;
+}
+
+.delete-btn{
+  background-color: red;
+  color: white;
+}
+
+.delete-btn:hover{
+  background-color: rgb(224, 0, 0);
+}
 
 /* End */
