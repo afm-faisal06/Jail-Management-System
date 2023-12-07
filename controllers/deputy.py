@@ -11,7 +11,7 @@ def deputy_route(app):
         info = 'deputy'
         conn = MySQLdb.connect(host='localhost', user='root', passwd='', db='jailmanage')
         cursor = conn.cursor()
-        # Query executes
+        # Query execute
         if session['email'] != 'walid49@gmail.com':
             cursor.execute('SELECT * FROM user WHERE email = %s', (session['email'],))
         else:
@@ -71,3 +71,5 @@ def deputy_route(app):
                 return render_template('error.html')
         else:
             return render_template('error.html')
+        
+ # End

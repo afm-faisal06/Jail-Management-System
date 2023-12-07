@@ -7,3 +7,5 @@ def home_route(app):
     def home():
         session['email'] = ""
         return render_template('home.html')
+    
+ # End
