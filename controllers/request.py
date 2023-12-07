@@ -113,4 +113,6 @@ def request_route(app):
                 cursor.execute('SELECT * FROM request Where role = %s', ('Cleaner',))
                 # Matched row in 'user'
                 user = cursor.fetchall()
-                return render_template('request.html',user=users)
+                return render_template('request.html',user=user)
+            
+ # End
