@@ -44,12 +44,10 @@
 }
 
 .option a {
-  /* border: 1px dotted red; */
   padding: 1rem;
   text-align: center;
   text-decoration: none;
   color: black;
-  /* background-color: aqua; */
   transition: all 0.3s;
 }
 
