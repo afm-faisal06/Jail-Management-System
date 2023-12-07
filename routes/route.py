@@ -7,6 +7,7 @@ from controllers.police import police_route
 from controllers.chef import chef_route
 from controllers.adminDash import adminDash_route
 from controllers.staffDetails import staffDetails_route
+from controllers.prisonerInfo import prisonerInfo_route
 from controllers.request import request_route
 
 def register_routes(app):
@@ -19,4 +20,7 @@ def register_routes(app):
     chef_route(app)
     adminDash_route(app)
     staffDetails_route(app)
+    prisonerInfo_route(app)
     request_route(app)
+    
+ # End

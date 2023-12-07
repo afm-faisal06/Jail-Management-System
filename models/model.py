@@ -24,3 +24,11 @@ class Schedule(db.Model):
     time = db.Column(db.String(1000), nullable=False)
     role = db.Column(db.String(120), nullable=False)
 
+class Prisoner(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(120), nullable=False)
+    age = db.Column(db.String(120), nullable=False)
+    birth = db.Column(db.String(120), nullable=False)
+    record = db.Column(db.String(120), nullable=False)
+    year = db.Column(db.String(120), nullable=False)
+    cell = db.Column(db.String(120), nullable=False)

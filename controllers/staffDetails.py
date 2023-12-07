@@ -113,3 +113,5 @@ def staffDetails_route(app):
                     # failed="Deleted!"
 
             return render_template('staffDetails.html',user=user,failed=failed,info=info)
+        
+ # End

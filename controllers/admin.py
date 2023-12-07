@@ -32,3 +32,5 @@ def admin_route(app):
             else:
                 failed = "Email Not Found!"
         return render_template('admin.html',failed=failed)
+    
+ # End

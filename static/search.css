@@ -41,4 +41,12 @@
   padding: .5rem 1rem;
 }
 
+.search-prisoner{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.842);
+  list-style: none;
+}
+
 /* End */
